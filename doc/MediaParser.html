@@ -1,0 +1,171 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: class MediaParser</title>
+</head><body bgcolor="#f0f0f8">
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="MediaParser">class <strong>MediaParser</strong></a>(<a href="lib.MediaParser.constants.html#Constants">lib.MediaParser.constants.Constants</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;class&nbsp;is&nbsp;made&nbsp;for&nbsp;parsing&nbsp;exif&nbsp;string<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="lib.MediaParser.media_parser.html#MediaParser">MediaParser</a></dd>
+<dd><a href="lib.MediaParser.constants.html#Constants">lib.MediaParser.constants.Constants</a></dd>
+<dd><a href="lib.MediaParser.constants.html#EXIFKeys">lib.MediaParser.constants.EXIFKeys</a></dd>
+<dd><a href="lib.MediaParser.constants.html#EXIFValues">lib.MediaParser.constants.EXIFValues</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MediaParser-__init__"><strong>__init__</strong></a>(self, file_obj<font color="#909090">=None</font>)</dt><dd><tt>init&nbsp;function<br>
+:param&nbsp;file_obj:&nbsp;could&nbsp;be&nbsp;a&nbsp;string&nbsp;or&nbsp;file&nbsp;object<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="MediaParser-get_all_settings"><strong>get_all_settings</strong></a>(self, is_trans<font color="#909090">=False</font>)</dt><dd><tt>get&nbsp;all&nbsp;exif&nbsp;strings<br>
+:param&nbsp;is_trans:&nbsp;translation&nbsp;or&nbsp;not<br>
+:return:&nbsp;dict&nbsp;of&nbsp;exif&nbsp;keys&nbsp;and&nbsp;values</tt></dd></dl>
+
+<dl><dt><a name="MediaParser-get_item_value"><strong>get_item_value</strong></a>(self, item_key, is_trans<font color="#909090">=False</font>)</dt><dd><tt>get&nbsp;the&nbsp;item&nbsp;value&nbsp;of&nbsp;exif&nbsp;strings<br>
+:param&nbsp;item_key:&nbsp;attribute&nbsp;of&nbsp;EXIFKeys<br>
+:param&nbsp;is_trans:&nbsp;tranlation&nbsp;or&nbsp;not<br>
+:return:&nbsp;value&nbsp;for&nbsp;the&nbsp;key</tt></dd></dl>
+
+<dl><dt><a name="MediaParser-parse_file"><strong>parse_file</strong></a>(self, file_obj)</dt><dd><tt>parse&nbsp;the&nbsp;file_obj&nbsp;to&nbsp;exif&nbsp;strings<br>
+:param&nbsp;file_obj:&nbsp;could&nbsp;be&nbsp;a&nbsp;string&nbsp;or&nbsp;file&nbsp;object<br>
+:return:&nbsp;exif&nbsp;object</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="lib.MediaParser.constants.html#EXIFKeys">lib.MediaParser.constants.EXIFKeys</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="lib.MediaParser.constants.html#EXIFKeys">lib.MediaParser.constants.EXIFKeys</a>:<br>
+<dl><dt><strong>APERTURE_VALUE</strong> = 'EXIF ApertureValue'</dl>
+
+<dl><dt><strong>CONTRAST</strong> = 'EXIF Contrast'</dl>
+
+<dl><dt><strong>DATE_TIME</strong> = 'Image DateTime'</dl>
+
+<dl><dt><strong>DESCRIPTION</strong> = 'Image ImageDescription'</dl>
+
+<dl><dt><strong>EXPOSURE_BIAS_VALUE</strong> = 'EXIF ExposureBiasValue'</dl>
+
+<dl><dt><strong>EXPOSURE_PROGRAM</strong> = 'EXIF ExposureProgram'</dl>
+
+<dl><dt><strong>EXPOSURE_TIME</strong> = 'EXIF ExposureTime'</dl>
+
+<dl><dt><strong>FOCAL_LENGTH</strong> = 'EXIF FocalLength'</dl>
+
+<dl><dt><strong>FOCAL_LENGTH_IN_35MM_FILM</strong> = 'EXIF FocalLengthIn35mmFilm'</dl>
+
+<dl><dt><strong>F_NUMBER</strong> = 'EXIF FNumber'</dl>
+
+<dl><dt><strong>GPS_LATITUDE</strong> = 'GPS GPSLatitude'</dl>
+
+<dl><dt><strong>GPS_LONGITUDE</strong> = 'GPS GPSLongitude'</dl>
+
+<dl><dt><strong>HEIGHT</strong> = 'EXIF ExifImageLength'</dl>
+
+<dl><dt><strong>ISO_SPEED</strong> = 'EXIF ISOSpeedRatings'</dl>
+
+<dl><dt><strong>MAKE</strong> = 'Image Make'</dl>
+
+<dl><dt><strong>METERING_MODE</strong> = 'EXIF MeteringMode'</dl>
+
+<dl><dt><strong>MODEL</strong> = 'Image Model'</dl>
+
+<dl><dt><strong>RESOLUTION_UNIT</strong> = 'Image ResolutionUnit'</dl>
+
+<dl><dt><strong>SATURATION</strong> = 'EXIF Saturation'</dl>
+
+<dl><dt><strong>SCENE_CAPTURE_TYPE</strong> = 'EXIF SceneCaptureType'</dl>
+
+<dl><dt><strong>SHARPNESS</strong> = 'EXIF Sharpness'</dl>
+
+<dl><dt><strong>SHUTTER</strong> = 'EXIF ShutterSpeedValue'</dl>
+
+<dl><dt><strong>SOFTWARE_NAME</strong> = 'Image Software'</dl>
+
+<dl><dt><strong>WHITE_BALANCE</strong> = 'EXIF WhiteBalance'</dl>
+
+<dl><dt><strong>WIDTH</strong> = 'EXIF ExifImageWidth'</dl>
+
+<dl><dt><strong>X_RESOLUTION</strong> = 'Image XResolution'</dl>
+
+<dl><dt><strong>Y_RESOLUTION</strong> = 'Image YResolution'</dl>
+
+<hr>
+Data and other attributes inherited from <a href="lib.MediaParser.constants.html#EXIFValues">lib.MediaParser.constants.EXIFValues</a>:<br>
+<dl><dt><strong>CONTRAST_HARD</strong> = 2</dl>
+
+<dl><dt><strong>CONTRAST_NORMAL</strong> = 0</dl>
+
+<dl><dt><strong>CONTRAST_SOFT</strong> = 1</dl>
+
+<dl><dt><strong>EXPOSURE_PROGRAM_APERTURE_PRIORITY</strong> = 3</dl>
+
+<dl><dt><strong>EXPOSURE_PROGRAM_LANDSCAPE_MODE</strong> = 8</dl>
+
+<dl><dt><strong>EXPOSURE_PROGRAM_MANUAL</strong> = 1</dl>
+
+<dl><dt><strong>EXPOSURE_PROGRAM_PORTRAIT_MODE</strong> = 7</dl>
+
+<dl><dt><strong>EXPOSURE_PROGRAM_PROGRAM_ACTION</strong> = 6</dl>
+
+<dl><dt><strong>EXPOSURE_PROGRAM_PROGRAM_CREATIVE</strong> = 5</dl>
+
+<dl><dt><strong>EXPOSURE_PROGRAM_PROGRAM_NORMAL</strong> = 2</dl>
+
+<dl><dt><strong>EXPOSURE_PROGRAM_SHUTTER_PRIORITY</strong> = 4</dl>
+
+<dl><dt><strong>EXPOSURE_PROGRAM_UNIDENTIFIED</strong> = 0</dl>
+
+<dl><dt><strong>METERING_MODE_AVERAGE</strong> = 1</dl>
+
+<dl><dt><strong>METERING_MODE_CENTER_WEIGHTED_AVERAGE</strong> = 2</dl>
+
+<dl><dt><strong>METERING_MODE_MULTI_SPOT</strong> = 4</dl>
+
+<dl><dt><strong>METERING_MODE_OTHER</strong> = 255</dl>
+
+<dl><dt><strong>METERING_MODE_PARTIAL</strong> = 6</dl>
+
+<dl><dt><strong>METERING_MODE_PATTERN</strong> = 5</dl>
+
+<dl><dt><strong>METERING_MODE_SPOT</strong> = 3</dl>
+
+<dl><dt><strong>METERING_MODE_UNIDENTIFIED</strong> = 0</dl>
+
+<dl><dt><strong>SATURATION_HARD</strong> = 2</dl>
+
+<dl><dt><strong>SATURATION_NORMAL</strong> = 0</dl>
+
+<dl><dt><strong>SATURATION_SOFT</strong> = 1</dl>
+
+<dl><dt><strong>SCENE_CAPTURE_TYPE_LANDSCAPE</strong> = 1</dl>
+
+<dl><dt><strong>SCENE_CAPTURE_TYPE_NIGHT</strong> = 3</dl>
+
+<dl><dt><strong>SCENE_CAPTURE_TYPE_PROTRAIT</strong> = 2</dl>
+
+<dl><dt><strong>SCENE_CAPTURE_TYPE_STANDARD</strong> = 0</dl>
+
+<dl><dt><strong>SHARPNESS_HARD</strong> = 2</dl>
+
+<dl><dt><strong>SHARPNESS_NORMAL</strong> = 0</dl>
+
+<dl><dt><strong>SHARPNESS_SOFT</strong> = 1</dl>
+
+<dl><dt><strong>WHITE_BALANCE_AUTO</strong> = 0</dl>
+
+<dl><dt><strong>WHITE_BALANCE_MANUAL</strong> = 1</dl>
+
+</td></tr></table>
+</body></html>
